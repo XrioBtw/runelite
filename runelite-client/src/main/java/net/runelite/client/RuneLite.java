@@ -135,6 +135,8 @@ public class RuneLite
 	{
 		// Do not fill in background on repaint. Reduces flickering when
 		// the applet is resized.
+		ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);
+		System.setProperty("jgoodies.popupDropShadowEnabled", "false");
 		System.setProperty("sun.awt.noerasebackground", "true");
 
 		OptionParser parser = new OptionParser();
